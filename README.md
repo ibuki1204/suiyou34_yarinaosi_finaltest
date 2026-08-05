@@ -2,7 +2,7 @@
 
 ## 使い方
 
-'''bash
+'bash
 docker compose up
 
 # dockerをインストールしていない場合
@@ -17,7 +17,7 @@ mkdir -p $DOCKER_CONFIG/cli-plugins
 curl -SL https://github.com/docker/compose/releases/download/v5.1.2/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
 chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
 
-#インストールできたかどうかの確認
+# インストールできたかどうかの確認
 docker compose version
 
 # buildxの新しいバージョンのインストール
@@ -27,7 +27,7 @@ BUILDX_URL=$(curl -s https://api.github.com/repos/docker/buildx/releases/latest 
 curl -L $BUILDX_URL -o ~/.docker/cli-plugins/docker-buildx
 chmod +x ~/.docker/cli-plugins/docker-buildx
 
-#起動後別ウィンドウで
+# 起動後別ウィンドウで
 docker compose exec mysql mysql example_db
 
 # MySQLクライアントが起動するので下記コード
@@ -37,7 +37,7 @@ CREATE TABLE `bbs_entries` (
   `image_filename` TEXT DEFAULT NULL,
   `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP
 );
-'''
+'
 
 # http://{パブリックIPv4アドレス}にアクセスすると使える。
 
